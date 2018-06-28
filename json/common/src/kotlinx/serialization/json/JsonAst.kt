@@ -84,9 +84,9 @@ data class JsonArray(val content: List<JsonElement>) : JsonElement(), List<JsonE
     fun getAsValue(index: Int) = content[index] as? JsonPrimitive
             ?: unexpectedJson("at $index", "JsonPrimitive")
     fun getAsObject(index: Int) = content[index] as? JsonObject
-            ?: unexpectedJson("at $index", "JsonPrimitive")
+            ?: unexpectedJson("at $index", "JsonObject")
     fun getAsArray(index: Int) = content[index] as? JsonArray
-            ?: unexpectedJson("at $index", "JsonPrimitive")
+            ?: unexpectedJson("at $index", "JsonArray")
     
     fun lookUpValue(index: Int) = content.getOrNull(index) as? JsonPrimitive
     fun lookUpObject(index: Int) = content.getOrNull(index) as? JsonObject
