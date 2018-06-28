@@ -1,5 +1,5 @@
 /*
- *  Copyright 2018 JetBrains s.r.o.
+ * Copyright 2018 JetBrains s.r.o.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,11 +20,11 @@ buildscript {
     if (project.hasProperty("bootstrap")) {
         ext.compilerVersion = '1.2-SNAPSHOT'
         ext.librariesVersion = '1.2-SNAPSHOT'
-        ext.serializationPluginVersion = '0.5.0-SNAPSHOT'
+        ext.serializationPluginVersion = '0.5.2-SNAPSHOT'
     } else {
         ext.compilerVersion = property('kotlin.version')
         ext.librariesVersion = property('kotlin.version')
-        ext.serializationPluginVersion = '0.5.0'
+        ext.serializationPluginVersion = '0.5.1'
     }
     ext.eapChannel = 'https://dl.bintray.com/kotlin/kotlin-eap'
     ext.serializationRepo = 'https://kotlin.bintray.com/kotlinx'
